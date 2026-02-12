@@ -15,6 +15,7 @@ func main() {
 
 	http.HandleFunc("/", service.IndexHandler)
 	http.HandleFunc("/api/count", service.CounterHandler)
+	http.HandleFunc("/api/dictvoice", service.DictVoiceHandler)
 
 	log.Fatal(http.ListenAndServe(":80", nil))
 }
